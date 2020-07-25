@@ -1,4 +1,4 @@
-# Twig Education Coding Challenge
+# Coding Challenge
 
 ## How to run
 

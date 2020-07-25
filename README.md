@@ -8,6 +8,8 @@ npm install
 npm test
 ```
 
+Code is stored in group.js if you don't want/have time to do this! The tests are in group.spec.js.
+
 ## Notes
 
 ### MVP
@@ -25,6 +27,29 @@ You may think the code is a little comment sparse, controversially I'm not absol
 ### Why it works
 
 I chose to use while as this reaps performance benefits when the input array is larger. I did have a few other approaches in mind and if you have a better one ( that's still readable! ) I'm happy to be proved wrong. Without seeing the team's codebase and writing styles, I thought simplicity was best.
+
+```bash
+
+function groupArrayElements( items, noOfGroups ) {
+    let itemsClone = [ ...items ];
+    let groups = [];
+    const groupSize = Math.ceil( items.length / noOfGroups );
+    while( itemsClone.length > 0 ) {
+        // if items still exist, grab another group
+        groups.push( itemsClone.splice( 0, groupSize ) );
+    }
+    return groups;
+}
+
+Copy the original input array as splice is mutable
+Create an empty array to hold the grouped content
+Calculate what the chunk size should be ( this is where my assumption comes in! )
+While there are still items that haven't been grouped yet,
+    Splice the copied array from 0 (we can do this because we have spliced the content i.e. removed items from the original array ) to the group size
+    In other words, we are removing group sized chunks from the list until we can't anymore
+Return the grouped content
+
+```
 
 ### Git notes
 

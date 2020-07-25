@@ -1,0 +1,14 @@
+{
+  "name": "twig",
+  "version": "1.0.0",
+  "description": "Twig Coding Challenge",
+  "main": "group.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Amy Morrison",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}

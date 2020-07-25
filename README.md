@@ -14,7 +14,7 @@ Code is stored in group.js if you don't want/have time to do this! The tests are
 
 ### MVP
 
-You should implement a function or class that can be called on to provide the following behaviour: Given an array of length >= 0, and a positive integer N, return the contents of the array divided into N equally sized arrays. Where the size of the original array cannot be divided equally by N, the final part should have a length equal to the remainder.
+( removed for privacy )
 
 **I have made one additional assumption: the positive integer N ( the number of groups ) cannot be greater than the length of the input array. In a real work environment, I would have asked for clarification and looked at how and where it would be used.**
 
